@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Data Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        .bar {
+            width: 100%;
+            background-color: lightgray;
+            margin: 5px 0;
+        }
+        .bar-fill {
+            height: 20px;
+            background-color: #4caf50;
+        }
+        #product-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Data Input</h1>
+    <div class="input-group">
+        <input type="text" id="productName" placeholder="Product Name">
+        <input type="number" id="productPrice" placeholder="Product Price" min="0">
+        <input type="number" id="productRating" placeholder="Product Rating (1-5)" min="1" max="5">
+        <button onclick="addProduct()">Add Product</button>
+        <button onclick="sortProducts()">Sort Products</button>
+    </div>
+    <div id="product-list"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
